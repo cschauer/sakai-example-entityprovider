@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <name>Example Entity Provider Component Package</name>
+  <parent>
+    <groupId>edu.txstate.etc.example</groupId>
+    <artifactId>example-entityprovider-base</artifactId>
+    <version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <groupId>edu.txstate.etc.example</groupId>
+  <artifactId>example-entityprovider-pack</artifactId>
+  <organization>
+    <name>Texas State University</name>
+    <url>http://txstate.edu/</url>
+  </organization>
+  <inceptionYear>2014</inceptionYear>
+  <packaging>sakai-component</packaging>
+  <properties>
+    <deploy.target>components</deploy.target>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>edu.txstate.etc.example</groupId>
+      <artifactId>example-entityprovider-impl</artifactId>
+      <version>1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.txstate.etc.example</groupId>
+      <artifactId>example-entityprovider-api</artifactId>
+      <version>1.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <resources>
+      <resource>
+        <directory>${basedir}/src/bundle</directory>
+        <includes>
+          <include>*.properties</include>
+        </includes>
+      </resource>
+    </resources>
+  </build>
+</project>

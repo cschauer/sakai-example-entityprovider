@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <name>Example Entity Provider API</name>
+  <parent>
+    <groupId>edu.txstate.etc.example</groupId>
+    <artifactId>example-entityprovider-base</artifactId>
+    <version>1.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <groupId>edu.txstate.etc.example</groupId>
+  <artifactId>example-entityprovider-api</artifactId>
+  <packaging>jar</packaging>
+  <properties>
+    <deploy.target>shared</deploy.target>
+  </properties>
+  <dependencies>
+    <dependency>
+      <groupId>org.sakaiproject.entitybroker</groupId>
+      <artifactId>entitybroker-api</artifactId>
+    </dependency>
+  </dependencies>
+  <build>
+    <resources/>
+  </build>
+</project>
