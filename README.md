@@ -1,5 +1,5 @@
 # sakai-example-entityprovider
-An example of creating an EntityProvider that provides a RESTful api to some resource in Sakai. This assumes you have an environment set up for sakai development.
+An example of creating an EntityProvider that provides a RESTful api to some resource in Sakai. This assumes you have an environment set up for sakai development. This specific example is for version 10.3 of Sakai, modify the base pom.xml to compile for other versions.
 
 ```
 cd into your sakai source directory
